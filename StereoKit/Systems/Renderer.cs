@@ -54,6 +54,8 @@ namespace StereoKit
 			set => NativeAPI.render_set_cam_root(value);
 		}
 
+		public static Matrix Projection => NativeAPI.render_get_projection();
+
 		/// <summary>Adds a mesh to the render queue for this frame! If the Hierarchy has a transform on it,
 		/// that transform is combined with the Matrix provided here.</summary>
 		/// <param name="mesh">A valid Mesh you wish to draw.</param>

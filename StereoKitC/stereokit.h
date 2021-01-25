@@ -592,6 +592,7 @@ SK_API void line_add_listv(const line_point_t *points, int32_t count);
 
 SK_API void     render_set_clip      (float near_plane sk_default(0.01f), float far_plane sk_default(50));
 SK_API void     render_set_fov       (float field_of_view_degrees sk_default(90.0f));
+SK_API matrix   render_get_projection();
 SK_API matrix   render_get_cam_root  ();
 SK_API void     render_set_cam_root  (const sk_ref(matrix) cam_root);
 SK_API void     render_set_skytex    (tex_t sky_texture);
